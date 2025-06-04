@@ -36,11 +36,16 @@
 ## Expanded Development Steps
 0. **Set Up**
     - [x] Set up Github repo
-    - [ ] Add instructions to README and write out development steps
-    - [ ] Create venv
+    - [x] Add instructions to README and write out development steps
+    - [x] Create venv
+    - [x] Setup .gitignore
+    - [ ] 
 1. **Ingest**
-    - [ ] Download CSV from UCI/Kaggle, store locally or in cloud.
+    - [x] Download CSV from UCI/Kaggle, store locally or in cloud.
     - [ ] Load into Postgres using Python or an Airflow ingest task.
+        - [x] Set up Docker and launch Postgres instance
+        - [x] Set up DBeaver
+        - [ ] Develop data ingest task
 2. **Cleanse**
     - [ ] Fix negative Quantity for returns or exclude them if needed.
     - [ ] Convert InvoiceDate to a standard timestamp.
