@@ -37,7 +37,7 @@
 0. **Set Up**
     - [x] Set up Github repo
     - [ ] Add instructions to README and write out development steps
-    - []
+    - [ ] Create venv
 1. **Ingest**
     - [ ] Download CSV from UCI/Kaggle, store locally or in cloud.
     - [ ] Load into Postgres using Python or an Airflow ingest task.
