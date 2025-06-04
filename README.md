@@ -32,3 +32,24 @@
     - Charts: daily/weekly revenue, top products, growth rate.
     - Use Case: marketing sees product performance, finance monitors revenue trends.
 
+
+## Expanded Development Steps
+0. **Set Up**
+    - [x] Set up Github repo
+    - [ ] Add instructions to README and write out development steps
+    - []
+1. **Ingest**
+    - [ ] Download CSV from UCI/Kaggle, store locally or in cloud.
+    - [ ] Load into Postgres using Python or an Airflow ingest task.
+2. **Cleanse**
+    - [ ] Fix negative Quantity for returns or exclude them if needed.
+    - [ ] Convert InvoiceDate to a standard timestamp.
+    - [ ] Remove duplicates or missing CustomerIDs where appropriate.
+3. **Model in Postgres**
+    - [ ] fact_sales: invoice number, product key, date key, customer key, quantity, total amount.
+    - [ ] dim_product, dim_date, dim_customer for analytics.
+4. **Orchestrate**
+    - [ ] Airflow pipeline for monthly or weekly ingestion and transformations.
+5. **Simple Dashboard**
+    - [ ] Charts: daily/weekly revenue, top products, growth rate.
+    - [ ] Use Case: marketing sees product performance, finance monitors revenue trends.
